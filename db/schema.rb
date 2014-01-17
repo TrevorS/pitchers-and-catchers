@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140117203123) do
+ActiveRecord::Schema.define(version: 20140117211208) do
 
   create_table "events", force: true do |t|
     t.string   "name"
@@ -24,13 +24,17 @@ ActiveRecord::Schema.define(version: 20140117203123) do
     t.string   "name"
     t.string   "league"
     t.datetime "spring_training_opener"
-    t.datetime "first_game"
+    t.datetime "opener"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.datetime "pitchers_and_catchers"
     t.datetime "first_workout"
     t.datetime "position_players"
     t.datetime "first_full_workout"
+    t.datetime "home_opener"
+    t.datetime "spring_training_home_opener"
+    t.datetime "last_home_game"
+    t.datetime "last_game"
   end
 
 end
