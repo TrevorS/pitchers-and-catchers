@@ -1,0 +1,27 @@
+# Rails .gitignore from GitHub
+*.rbc
+*.sassc
+.sass-cache
+capybara-*.html
+.rspec
+.rvmrc
+/.bundle
+/vendor/bundle
+/log/*
+/tmp/*
+/db/*.sqlite3
+/public/system/*
+/coverage/
+/spec/tmp/*
+**.orig
+rerun.txt
+pickle-email-*.html
+.project
+config/initializers/secret_token.rb
+
+# Vim .gitignore from GitHub
+*.s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
