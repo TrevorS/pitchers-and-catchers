@@ -1,0 +1,36 @@
+NL:
+  ArizonaDiamondbacks:
+    pitchers_and_catchers:        '20140206'
+    first_workout:                '20140207'
+    position_players:             '20140211'
+    first_full_workout:           '20140212'
+    spring_training_opener:       '20140226'
+    spring_training_home_opener:  '20140226'
+    opener:                       '20140331'
+    home_opener:                  '20140331'
+    last_home_game:               '20140928'
+    last_game:                    '20140928'
+
+  AtlantaBraves:
+    pitchers_and_catchers:        '20140213'
+    first_workout:                '20140214'
+    position_players:             '20140218'
+    first_full_workout:           '20140219'
+    spring_training_opener:       '20140226'
+    spring_training_home_opener:  '20140226'
+    opener:                       '20140331'
+    home_opener:                  '20140408'
+    last_home_game:               '20140925'
+    last_game:                    '20140928'
+
+  ChicagoCubs:
+    pitchers_and_catchers:        '20140213'
+    first_workout:                '20140214'
+    position_players:             '20140218'
+    first_full_workout:           '20140219'
+    spring_training_opener:       '20140227'
+    spring_training_home_opener:  '20140227'
+    opener:                       '20140331'
+    home_opener:                  '20140404'
+    last_home_game:               '20140924'
+    last_game:                    '20140928'
