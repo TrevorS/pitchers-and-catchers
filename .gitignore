@@ -25,3 +25,4 @@ config/initializers/secret_token.rb
 Session.vim
 .netrwhist
 *~
+tags
