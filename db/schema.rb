@@ -11,30 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140117211208) do
+ActiveRecord::Schema.define(version: 20140125225419) do
 
   create_table "events", force: true do |t|
     t.string   "name"
-    t.datetime "start"
+    t.datetime "scheduling"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "team_id"
+  end
+
+  add_index "events", ["team_id"], name: "index_events_on_team_id"
+
+  create_table "leagues", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "teams", force: true do |t|
     t.string   "name"
-    t.string   "league"
-    t.datetime "spring_training_opener"
-    t.datetime "opener"
+    t.integer  "league_id",  limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.datetime "pitchers_and_catchers"
-    t.datetime "first_workout"
-    t.datetime "position_players"
-    t.datetime "first_full_workout"
-    t.datetime "home_opener"
-    t.datetime "spring_training_home_opener"
-    t.datetime "last_home_game"
-    t.datetime "last_game"
   end
 
 end
