@@ -1,0 +1,26 @@
+<nav class="header">
+  <ul class="nav nav-pills pull-right">
+    <li class="dropdown">
+    <a href="#" role="button" data-toggle="dropdown">
+      American League
+    </a>
+    <ul class="dropdown-menu" role="menu">
+      <% League.AL.teams.each do |team| %>
+        <li><%= link_to team.name, '#' %></li>
+      <% end %>
+    </ul>
+    </li>
+
+    <li class="dropdown">
+    <a href="#" role="button" data-toggle="dropdown">
+      National League
+    </a>
+    <ul class="dropdown-menu" role="menu">
+      <% League.NL.teams.each do |team| %>
+        <li><%= link_to team.name, '#' %></li>
+      <% end %>
+    </ul>
+    </li>
+  </ul>
+  <h3>Pitchers & Catchers</h3>
+</nav>
