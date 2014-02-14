@@ -6,7 +6,7 @@
     </a>
     <ul class="dropdown-menu" role="menu">
       <% League.AL.teams.each do |team| %>
-        <li><%= link_to team.name, '#' %></li>
+        <li><%= link_to team.name, team %></li>
       <% end %>
     </ul>
     </li>
@@ -17,7 +17,7 @@
     </a>
     <ul class="dropdown-menu" role="menu">
       <% League.NL.teams.each do |team| %>
-        <li><%= link_to team.name, '#' %></li>
+        <li><%= link_to team.name, team %></li>
       <% end %>
     </ul>
     </li>
