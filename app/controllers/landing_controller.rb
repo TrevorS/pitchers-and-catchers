@@ -1,5 +1,6 @@
 class LandingController < ApplicationController
   def index
-    @team = League.AL.teams.first
+    @team = Team.random
+    redirect_to @team
   end
 end

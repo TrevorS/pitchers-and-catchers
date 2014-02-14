@@ -1,0 +1,24 @@
+<h1 class="team-name">
+  <%= @team.name %>
+  <small id="countdown-title">
+    pitchers and catchers
+  </small>
+</h1>
+<div class="jumbotron">
+  <div id="countdown"></div>
+</div>
+<% @team.events.each_slice(3) do |batch| %>
+  <div class="row">
+    <% batch.each do |event| %>
+      <div class="col-xs-4 event">
+        <%= link_to event.name, '#', class: 'btn btn-default btn-lg' %>
+        <p>
+          <time id="time-<%= event.name.gsub(' ', '-').downcase %>" datetime="<%= event.scheduling %>">
+            <%= event.scheduling.strftime('%B %e %Y') %>
+          </time>
+        </p>
+        <p class="event-description">Lorem Ipsum, Lorem Ipsum, Lorem Ipsum.</p>
+      </div>
+    <% end %>
+  </div>
+<% end %>

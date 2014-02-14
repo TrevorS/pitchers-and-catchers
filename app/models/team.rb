@@ -12,4 +12,8 @@
 class Team < ActiveRecord::Base
   has_many :events
   belongs_to :league
+
+  def self.random
+    offset(rand(Team.count)).first
+  end
 end
