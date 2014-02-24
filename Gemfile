@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'annotate'
 gem 'bootstrap-sass'
 gem 'flipclockjs-rails', '~> 0.4.0b'
+gem 'animate.css-rails'
 
 group :doc do
   gem 'sdoc', require: false
